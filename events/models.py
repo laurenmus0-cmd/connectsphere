@@ -14,7 +14,7 @@ class Event(models.Model):
 
     organizer = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    max_attendees = models.IntegerField()
+    max_attendees = models.PositiveIntegerField()
 
     created_at = models.DateTimeField(auto_now_add=True)
 
